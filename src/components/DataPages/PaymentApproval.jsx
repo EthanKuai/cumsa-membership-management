@@ -207,6 +207,7 @@ const PaymentApproval = ({ isLoading, setIsLoading, setToastSetting }) => {
         </Typography>
         <DataTable
           rows={filteredData}
+          initialRowsPerPage={-1}
           allCols={allCols}
           selectedCrsids={selectedCrsids}
           onSelectRow={handleSelectMember}
